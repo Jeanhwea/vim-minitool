@@ -10,7 +10,7 @@ endif
 
 function! s:md5sum(file)
   let cmd= 'md5sum ' . a:file 
-  silent !clear
+  silent! clear
   execute '!' . cmd
 endfunction
 
