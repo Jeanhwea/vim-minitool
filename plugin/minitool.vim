@@ -27,6 +27,6 @@ function! s:browse_recent_files()
   execute 'browse oldfiles'
 endfunction
 
-command! -nargs=0 Mbro call s:browse_recent_files()
+command! -nargs=0 Moldfiles call s:browse_recent_files()
 
 " vim:set et sw=2:
