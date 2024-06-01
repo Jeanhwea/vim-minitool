@@ -16,5 +16,4 @@ endfunction
 
 command! -nargs=1 -complete=file Md5 call s:md5sum(<q-args>)
 
-
 " vim:set et sw=2:
