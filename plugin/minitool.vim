@@ -8,3 +8,4 @@ else
   let g:loaded_minitool = 'yes'
 endif
 
+" vim:set et sw=2:
