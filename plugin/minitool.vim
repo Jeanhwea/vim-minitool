@@ -18,6 +18,7 @@ endfunction
 
 command! -nargs=1 -complete=file Md5 call s:md5sum(<q-args>)
 
+" add open recent files
 function! s:browse_recent_files()
   " ignore some pattern 
   call filter(v:oldfiles, 'v:val !~# "fugitive:///.*"')
@@ -27,5 +28,7 @@ function! s:browse_recent_files()
 endfunction
 
 command! -nargs=0 Moldfiles call s:browse_recent_files()
+
+nmap <Leader>ff :Moldfiles<CR>
 
 " vim:set et sw=2:
