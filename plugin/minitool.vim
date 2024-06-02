@@ -18,7 +18,6 @@ endfunction
 
 command! -nargs=1 -complete=file Md5 call s:md5sum(<q-args>)
 
-
 function! s:browse_recent_files()
   " ignore some pattern 
   call filter(v:oldfiles, 'v:val !~# "fugitive:///.*"')
